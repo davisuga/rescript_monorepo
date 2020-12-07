@@ -9,7 +9,7 @@ let htmlDocument = Document.asHtmlDocument(document)->Belt.Option.getExn;
 
 htmlDocument |> HtmlDocument.head |> Element.appendChild(style);
 
-style->Element.setInnerHTML(A.ExampleStyles.style);
+style->Element.setInnerHTML(ExampleStyles.style);
 
 let makeContainer = text => {
   let container = document |> Document.createElement("div");
@@ -32,4 +32,4 @@ let makeContainer = text => {
   content;
 };
 
-B.Examples.render(makeContainer);
+Redirect.render(makeContainer);

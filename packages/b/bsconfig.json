@@ -3,11 +3,16 @@
   "reason": {
     "react-jsx": 3
   },
-  "sources": {
-    "dir": "src"
-  },
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "test",
+      "type": "dev"
+    }
+  ],
   "suffix": ".bs.js",
-  "namespace": true,
   "bs-dependencies": [
     "reason-react",
     "a"

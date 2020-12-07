@@ -6,21 +6,9 @@ let render = makeContainer => {
     makeContainer("Blinking Greeting"),
   );
 
-  ReactDOMRe.render(
-    <ReducerFromReactJSDocs />,
-    makeContainer("Reducer From ReactJS Docs"),
-  );
+  ReactDOMRe.render(<ReducerFromReactJSDocs />, makeContainer("Reducer From ReactJS Docs"));
 
-  ReactDOMRe.render(
-    <FetchedDogPictures />,
-    makeContainer("Fetched Dog Pictures"),
-  );
+  ReactDOMRe.render(<FetchedDogPictures />, makeContainer("Fetched Dog Pictures"));
 
-  ReactDOMRe.render(
-    <ReasonUsingJSUsingReason />,
-    makeContainer("Reason Using JS Using Reason"),
-  );
+  ReactDOMRe.render(<ReasonUsingJSUsingReason />, makeContainer("Reason Using JS Using Reason"));
 };
-
-// This shows an error in RLS, but not during `bsb -make-world`
-let shouldThrowWarning = unused => ();

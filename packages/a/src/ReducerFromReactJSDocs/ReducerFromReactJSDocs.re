@@ -4,7 +4,13 @@
 // A little extra we've put, because the ReactJS example has no styling
 let leftButtonStyle = ReactDOMRe.Style.make(~borderRadius="4px 0px 0px 4px", ~width="48px", ());
 let rightButtonStyle = ReactDOMRe.Style.make(~borderRadius="0px 4px 4px 0px", ~width="48px", ());
-let containerStyle = ReactDOMRe.Style.make(~display="flex", ~alignItems="center", ~justifyContent="space-between", ());
+let containerStyle =
+  ReactDOMRe.Style.make(
+    ~display="flex",
+    ~alignItems="center",
+    ~justifyContent="space-between",
+    (),
+  );
 
 // Record and variant need explicit declarations.
 type state = {count: int};
@@ -28,10 +34,7 @@ let make = () => {
 
   // We can use a fragment here, but we don't, because we want to style the counter
   <div style=containerStyle>
-    <div>
-      {React.string("Count: ")}
-      {React.string(string_of_int(state.count))}
-    </div>
+    <div> {React.string("Count: ")} {React.string(string_of_int(state.count))} </div>
     <div>
       <button style=leftButtonStyle onClick={_event => dispatch(Decrement)}>
         {React.string("-")}

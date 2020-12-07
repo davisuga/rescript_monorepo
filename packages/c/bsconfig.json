@@ -1,12 +1,11 @@
 {
-  "name": "a",
+  "name": "c",
   "reason": {
     "react-jsx": 3
   },
   "sources": [
     {
-      "dir": "src",
-      "subdirs": true
+      "dir": "src"
     },
     {
       "dir": "test",
@@ -14,9 +13,9 @@
     }
   ],
   "suffix": ".bs.js",
-  "namespace": true,
   "bs-dependencies": [
-    "reason-react"
+    "reason-react",
+    "b"
   ],
   "warnings": {
     "number": "A+101",

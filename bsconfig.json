@@ -14,9 +14,14 @@
     }
   ],
   "suffix": ".bs.js",
-  "bs-dependencies": [
+  "pinned-dependencies": [
     "a",
     "b",
+    "c"
+  ],
+  "bs-dependencies": [
+    "b",
+    "c",
     "reason-react",
     "bs-webapi"
   ],

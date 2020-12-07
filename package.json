@@ -6,12 +6,12 @@
   "scripts": {
     "build": "bsb -make-world && fpack",
     "clean": "bsb -clean-world",
-    "watch": "bsb -make-world && fpack; watchman-make -p '**/src/**/*.re*' '**/bsconfig.json' 'fastpack.json' --run 'bsb -make-world && fpack'",
+    "watch": "watchexec -w packages -w src -i lib -e re,rei yarn build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "bs-platform": "^7.3.2",
-    "bs-webapi": "^0.15.9",
+    "bs-platform": "^8.4.1",
+    "bs-webapi": "^0.19.1",
     "fastpack": "^0.9.1"
   },
   "private": true,
