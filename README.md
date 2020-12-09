@@ -15,12 +15,9 @@ This repository leverages ReScript pinned packages support. The setup:
 - packages are listed under `bs-dependencies` and `pinned-dependencies`, which works because the yarn workspace creates symlinks to each source package in `node_modules`
 - `yarn build` compiles and bundles
 
-Everything _looks_ sweet at this point, in particular within packages `namespace` works just fine, but there is a critical flaw which prevent this from being viable; modifications, no matter how small, can trigger a forest of rebuilds. For example:
+As of 8.4.2-dev.1 this is considered ready for use. However do note that interface modifications, no matter how small, will still trigger a forest of rebuilds. For example changing `ExampleStyles.re` in `b` is a contained rebuild as expected, but changing `ExampleStyles.rei` causes a complete rebuild of package `c` even though `c` only uses the `Examples` module from `b`, not `ExampleStyles`.
 
-- Changing `ExampleStyles.re` in `b` causes package `c` to rebuild even though `c` does not use it.
-- Changing `ATest.re` - which is a development source file and therefore cannot have any impact on the exported code - triggers a complete rebuild of packages `b` and `c`.
-
-In my ideal scenario `bsb` would track dependencies at a more granular level, to rebuild just the changed tree, as it does when the same structure is modelled flat with a single `bsconfig.json`.
+In a perfect scenario `bsb` would track dependencies at a more granular level, to rebuild based on interface contents rather than simple file timestamps, as it does when the same structure is modelled as a flat namespace with a single `bsconfig.json`.
 
 ### Source
 Heavily modified from the ReasonReact Template.

@@ -7,10 +7,10 @@ bs-fetch@^0.6.2:
   resolved "https://registry.yarnpkg.com/bs-fetch/-/bs-fetch-0.6.2.tgz#37d982e9f79b9bc44c23e87ae78ccbee1f869adf"
   integrity sha512-VXEjp8kY3vHPckaoy3d96Bx0KYjJAPLNISBwfpwMN26K6DtuZYwI2HKhx7zeHBajz1bRArfx7O8OOLcdtujMvg==
 
-bs-platform@^8.4.1:
-  version "8.4.1"
-  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-8.4.1.tgz#19bd20b65e8a9c0ad949f30638f0f3ad3dc37819"
-  integrity sha512-8nhKCFbJ38YS0Nyl4VXA3I3dkKhcd0roxLcePdAjX5DOubzh42QJj0VA4v5ieuVxZGE9Il1getibhvebdLkVmw==
+bs-platform@8.4.2-dev.1:
+  version "8.4.2-dev.1"
+  resolved "https://registry.yarnpkg.com/bs-platform/-/bs-platform-8.4.2-dev.1.tgz#c95e44270e06aaf0a651a55f870e32bdf38f6395"
+  integrity sha512-DpAojdEudJho2h4zXLH1yAO0HLhgRe8MkvAY8ztBVeLjkrRSU40LRTAd0pUK29WiSolHliHIrUlus2HovE7FYA==
 
 bs-webapi@^0.19.1:
   version "0.19.1"
