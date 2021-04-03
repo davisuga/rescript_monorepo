@@ -14,11 +14,6 @@
     }
   ],
   "suffix": ".bs.js",
-  "pinned-dependencies": [
-    "a",
-    "b",
-    "c"
-  ],
   "bs-dependencies": [
     "b",
     "c",

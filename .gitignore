@@ -3,3 +3,7 @@ lib
 *.bs.js
 .merlin
 yarn-error.log
+_build
+_esy
+/dune
+/dune.bsb
