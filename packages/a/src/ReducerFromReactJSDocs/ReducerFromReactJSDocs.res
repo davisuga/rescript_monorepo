@@ -2,35 +2,33 @@
 // https://reactjs.org/docs/hooks-reference.html#usereducer
 
 // A little extra we've put, because the ReactJS example has no styling
-let leftButtonStyle = ReactDOMRe.Style.make(~borderRadius="4px 0px 0px 4px", ~width="48px", ());
-let rightButtonStyle = ReactDOMRe.Style.make(~borderRadius="0px 4px 4px 0px", ~width="48px", ());
-let containerStyle =
-  ReactDOMRe.Style.make(
-    ~display="flex",
-    ~alignItems="center",
-    ~justifyContent="space-between",
-    (),
-  );
+let leftButtonStyle = ReactDOMRe.Style.make(~borderRadius="4px 0px 0px 4px", ~width="48px", ())
+let rightButtonStyle = ReactDOMRe.Style.make(~borderRadius="0px 4px 4px 0px", ~width="48px", ())
+let containerStyle = ReactDOMRe.Style.make(
+  ~display="flex",
+  ~alignItems="center",
+  ~justifyContent="space-between",
+  (),
+)
 
 // Record and variant need explicit declarations.
-type state = {count: int};
+type state = {count: int}
 
 type action =
   | Increment
-  | Decrement;
+  | Decrement
 
-let initialState = {count: 0};
+let initialState = {count: 0}
 
-let reducer = (state, action) => {
-  switch (action) {
+let reducer = (state, action) =>
+  switch action {
   | Increment => {count: state.count + 1}
   | Decrement => {count: state.count - 1}
-  };
-};
+  }
 
-[@react.component]
+@react.component
 let make = () => {
-  let (state, dispatch) = React.useReducer(reducer, initialState);
+  let (state, dispatch) = React.useReducer(reducer, initialState)
 
   // We can use a fragment here, but we don't, because we want to style the counter
   <div style=containerStyle>
@@ -43,5 +41,5 @@ let make = () => {
         {React.string("+")}
       </button>
     </div>
-  </div>;
-};
+  </div>
+}

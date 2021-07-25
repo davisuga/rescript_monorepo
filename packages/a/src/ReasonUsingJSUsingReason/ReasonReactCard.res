@@ -4,7 +4,5 @@
 // - ReactJSCard.js can be used by ReasonReact, through bindings in ReasonUsingJSUsingReason.re
 // - ReasonUsingJSUsingReason.re is used by Index.re
 
-[@react.component]
-let make = (~style) => {
-  <div style> {React.string("This is a ReasonReact card")} </div>;
-};
+@react.component
+let make = (~style) => <div style> {React.string("This is a ReasonReact card")} </div>
