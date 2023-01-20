@@ -4,13 +4,13 @@
   "keywords": [
     "BuckleScript",
     "ReasonReact",
-    "reason-react"
+    "@rescript/react"
   ],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "reason-react": ">=0.7.1"
+    "@rescript/react": ">=0.7.1"
   }
 }

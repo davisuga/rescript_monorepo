@@ -5,6 +5,6 @@
 // - ReasonUsingJSUsingReason.re is used by Index.re
 
 // All you need to do to use a ReactJS component in ReasonReact, is to write the lines below!
-// reasonml.github.io/reason-react/docs/en/components#import-from-js
+// reasonml.github.io/@rescript/react/docs/en/components#import-from-js
 @react.component @module
 external make: unit => React.element = "./ReactJSCard"

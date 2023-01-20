@@ -14,17 +14,8 @@
     }
   ],
   "suffix": ".bs.js",
-  "pinned-dependencies": [
-    "a",
-    "b",
-    "c"
-  ],
-  "bs-dependencies": [
-    "b",
-    "c",
-    "reason-react",
-    "bs-webapi"
-  ],
+  "pinned-dependencies": ["a", "b", "c"],
+  "bs-dependencies": ["a", "b", "c", "@rescript/react", "bs-webapi"],
   "warnings": {
     "number": "A+101",
     "error": true

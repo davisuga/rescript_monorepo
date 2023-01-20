@@ -1,0 +1,149 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      bs-webapi: ^0.19.1
+      fastpack: ^0.9.1
+      rescript: ^10.1
+    devDependencies:
+      bs-webapi: 0.19.1
+      fastpack: 0.9.1
+      rescript: 10.1.1
+
+  packages/a:
+    specifiers:
+      '@rescript/react': '>=0.7.1'
+      react: ^16.8.1
+      react-dom: ^16.8.1
+    dependencies:
+      '@rescript/react': 0.10.3_wcqkhtmu7mswc6yz4uyexck3ty
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+
+  packages/b:
+    specifiers:
+      '@rescript/react': '>=0.7.1'
+      a: workspace:~0.1.0
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@rescript/react': 0.10.3_wcqkhtmu7mswc6yz4uyexck3ty
+      a: link:../a
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+
+  packages/c:
+    specifiers:
+      '@rescript/react': '>=0.7.1'
+      a: workspace:~0.1.0
+      b: workspace:~0.1.0
+      react: ^16.8.1
+      react-dom: ^16.8.1
+    dependencies:
+      '@rescript/react': 0.10.3_wcqkhtmu7mswc6yz4uyexck3ty
+      a: link:../a
+      b: link:../b
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+
+packages:
+
+  /@rescript/react/0.10.3_wcqkhtmu7mswc6yz4uyexck3ty:
+    resolution: {integrity: sha512-Lf9rzrR3bQPKJjOK3PBRa/B3xrJ7CqQ1HYr9VHPVxJidarIJJFZBhj0Dg1uZURX+Wg/xiP0PHFxXmdj2bK8Vxw==}
+    peerDependencies:
+      react: '>=16.8.1'
+      react-dom: '>=16.8.1'
+    dependencies:
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+    dev: false
+
+  /bs-fetch/0.6.2:
+    resolution: {integrity: sha512-VXEjp8kY3vHPckaoy3d96Bx0KYjJAPLNISBwfpwMN26K6DtuZYwI2HKhx7zeHBajz1bRArfx7O8OOLcdtujMvg==}
+    dev: true
+
+  /bs-webapi/0.19.1:
+    resolution: {integrity: sha512-sRhkNdHFBxzoiLH+r8rhlW9XSafBbbGCkvsxtTJ1QMABEaHKj8TejwA7TuBZH2ZYL2ur3sk291ukkge5qFm3Uw==}
+    deprecated: Use https://www.npmjs.com/package/rescript-webapi
+    peerDependencies:
+      bsdoc: ^6.0.4-alpha
+    dependencies:
+      bs-fetch: 0.6.2
+    dev: true
+
+  /fastpack/0.9.1:
+    resolution: {integrity: sha512-Pons5DJAfBCMkaFQ2Sx08PapmrTYmbgA+cMq5efjsJiOHQLwmRbiFN3oUcIH3lfDFfiHOhtKlrfl1C8+wjApHQ==}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      loader-runner: 3.1.0
+    dev: true
+
+  /js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
+  /loader-runner/3.1.0:
+    resolution: {integrity: sha512-wE/bOCdTKMR2rm7Xxh+eirDOmN7Vx7hntWgiTayuFPtF8MgsFDo49SP8kkYz8IVlEBTOtR7P+XI7bE1xjo/IkA==}
+    engines: {node: '>=6.11.5'}
+    dev: true
+
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+
+  /object-assign/4.1.1:
+    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
+  /prop-types/15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
+  /react-dom/16.14.0_react@16.14.0:
+    resolution: {integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==}
+    peerDependencies:
+      react: ^16.14.0
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+      react: 16.14.0
+      scheduler: 0.19.1
+    dev: false
+
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react/16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
+    dev: false
+
+  /rescript/10.1.1:
+    resolution: {integrity: sha512-6rwFNt+A1VqD34L/9T95TKh22zyT0Cs5VUWCQnFblBNsUfz5mFdUSNvdOFf1Nbiz8NaQJGwhLKKjzxsF/pbbLg==}
+    hasBin: true
+    requiresBuild: true
+    dev: true
+
+  /scheduler/0.19.1:
+    resolution: {integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+    dev: false

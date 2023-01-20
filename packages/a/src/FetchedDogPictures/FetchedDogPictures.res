@@ -10,7 +10,7 @@ let make = () => {
   let (state, setState) = React.useState(() => LoadingDogs)
 
   // Notice that instead of `useEffect`, we have `useEffect0`. See
-  // reasonml.github.io/reason-react/docs/en/components#hooks for more info
+  // reasonml.github.io/@rescript/react/docs/en/components#hooks for more info
   React.useEffect0(() => {
     {
       open Js.Promise
@@ -38,7 +38,7 @@ let make = () => {
   })
 
   <div
-    style={ReactDOMRe.Style.make(
+    style={ReactDOM.Style.make(
       ~height="120px",
       ~display="flex",
       ~alignItems="center",
@@ -51,7 +51,7 @@ let make = () => {
     | LoadedDogs(dogs) =>
       dogs
       ->Belt.Array.mapWithIndex((i, dog) => {
-        let imageStyle = ReactDOMRe.Style.make(
+        let imageStyle = ReactDOM.Style.make(
           ~height="120px",
           ~width="100%",
           ~marginRight=i === Js.Array.length(dogs) - 1 ? "0px" : "8px",

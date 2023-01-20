@@ -13,10 +13,7 @@
     }
   ],
   "suffix": ".bs.js",
-  "bs-dependencies": [
-    "reason-react",
-    "b"
-  ],
+  "bs-dependencies": ["@rescript/react", "a", "b"],
   "warnings": {
     "number": "A+101",
     "error": true

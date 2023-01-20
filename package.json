@@ -12,10 +12,7 @@
   "devDependencies": {
     "bs-webapi": "^0.19.1",
     "fastpack": "^0.9.1",
-    "rescript": "^9.1.4"
+    "rescript": "^10.1"
   },
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ]
+  "private": true
 }
