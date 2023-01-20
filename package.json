@@ -10,9 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "bs-webapi": "^0.19.1",
-    "fastpack": "^0.9.1",
-    "rescript": "^10.1"
+    "fastpack": "^0.9.1"
   },
   "private": true
 }

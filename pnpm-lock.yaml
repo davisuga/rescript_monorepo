@@ -4,23 +4,21 @@ importers:
 
   .:
     specifiers:
-      bs-webapi: ^0.19.1
       fastpack: ^0.9.1
-      rescript: ^10.1
     devDependencies:
-      bs-webapi: 0.19.1
       fastpack: 0.9.1
-      rescript: 10.1.1
 
   packages/a:
     specifiers:
       '@rescript/react': '>=0.7.1'
       react: ^16.8.1
       react-dom: ^16.8.1
+      rescript: '10.1'
     dependencies:
       '@rescript/react': 0.10.3_wcqkhtmu7mswc6yz4uyexck3ty
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
+      rescript: 10.1.1
 
   packages/b:
     specifiers:
@@ -28,11 +26,13 @@ importers:
       a: workspace:~0.1.0
       react: '*'
       react-dom: '*'
+      rescript: '10.1'
     dependencies:
       '@rescript/react': 0.10.3_wcqkhtmu7mswc6yz4uyexck3ty
       a: link:../a
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
+      rescript: 10.1.1
 
   packages/c:
     specifiers:
@@ -41,12 +41,14 @@ importers:
       b: workspace:~0.1.0
       react: ^16.8.1
       react-dom: ^16.8.1
+      rescript: ^10.1
     dependencies:
       '@rescript/react': 0.10.3_wcqkhtmu7mswc6yz4uyexck3ty
       a: link:../a
       b: link:../b
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
+      rescript: 10.1.1
 
 packages:
 
@@ -59,19 +61,6 @@ packages:
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
     dev: false
-
-  /bs-fetch/0.6.2:
-    resolution: {integrity: sha512-VXEjp8kY3vHPckaoy3d96Bx0KYjJAPLNISBwfpwMN26K6DtuZYwI2HKhx7zeHBajz1bRArfx7O8OOLcdtujMvg==}
-    dev: true
-
-  /bs-webapi/0.19.1:
-    resolution: {integrity: sha512-sRhkNdHFBxzoiLH+r8rhlW9XSafBbbGCkvsxtTJ1QMABEaHKj8TejwA7TuBZH2ZYL2ur3sk291ukkge5qFm3Uw==}
-    deprecated: Use https://www.npmjs.com/package/rescript-webapi
-    peerDependencies:
-      bsdoc: ^6.0.4-alpha
-    dependencies:
-      bs-fetch: 0.6.2
-    dev: true
 
   /fastpack/0.9.1:
     resolution: {integrity: sha512-Pons5DJAfBCMkaFQ2Sx08PapmrTYmbgA+cMq5efjsJiOHQLwmRbiFN3oUcIH3lfDFfiHOhtKlrfl1C8+wjApHQ==}
@@ -139,7 +128,7 @@ packages:
     resolution: {integrity: sha512-6rwFNt+A1VqD34L/9T95TKh22zyT0Cs5VUWCQnFblBNsUfz5mFdUSNvdOFf1Nbiz8NaQJGwhLKKjzxsF/pbbLg==}
     hasBin: true
     requiresBuild: true
-    dev: true
+    dev: false
 
   /scheduler/0.19.1:
     resolution: {integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==}
