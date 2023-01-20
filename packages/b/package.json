@@ -9,9 +9,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@rescript/react": ">=0.7.1",
     "a": "workspace:~0.1.0",
     "react": "*",
     "react-dom": "*",
-    "@rescript/react": ">=0.7.1"
+    "rescript": "10.1"
   }
 }
