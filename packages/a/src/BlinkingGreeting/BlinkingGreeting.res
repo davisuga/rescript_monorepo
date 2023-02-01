@@ -18,3 +18,7 @@ let make = (~children) => {
 
   <div style> children </div>
 }
+@decco
+type x = {name: string}
+let _ = x_encode
+let _ = x_decode

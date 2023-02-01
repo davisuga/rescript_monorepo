@@ -6,6 +6,7 @@ let render = makeContainer => {
     makeContainer("Blinking Greeting"),
   )
 
+  let _ = A.BlinkingGreeting.x_decode
   ReactDOM.render(<ReducerFromReactJSDocs />, makeContainer("Reducer From ReactJS Docs"))
 
   ReactDOM.render(<FetchedDogPictures />, makeContainer("Fetched Dog Pictures"))

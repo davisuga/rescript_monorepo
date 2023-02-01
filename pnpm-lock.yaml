@@ -11,11 +11,13 @@ importers:
   packages/a:
     specifiers:
       '@rescript/react': '>=0.7.1'
+      decco: ^1.6.0
       react: ^16.8.1
       react-dom: ^16.8.1
       rescript: '10.1'
     dependencies:
       '@rescript/react': 0.10.3_wcqkhtmu7mswc6yz4uyexck3ty
+      decco: 1.6.0
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
       rescript: 10.1.1
@@ -60,6 +62,13 @@ packages:
     dependencies:
       react: 16.14.0
       react-dom: 16.14.0_react@16.14.0
+    dev: false
+
+  /decco/1.6.0:
+    resolution: {integrity: sha512-gdeDDPOh45Hz8YGvTkDP7ySo3Ll3ty+KfuFj21+jRbiCoE8HTCNB++pozCiMljxJx39CfvrHRYBY5FO5PMyXzw==}
+    requiresBuild: true
+    peerDependencies:
+      bs-platform: 6 || 7 || 8 || 9
     dev: false
 
   /fastpack/0.9.1:

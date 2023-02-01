@@ -15,7 +15,8 @@
   ],
   "suffix": ".bs.js",
   "namespace": true,
-  "bs-dependencies": ["@rescript/react"],
+  "bs-dependencies": ["@rescript/react", "decco"],
+  "ppx-flags": ["decco/ppx"],
   "warnings": {
     "number": "A+101",
     "error": true
